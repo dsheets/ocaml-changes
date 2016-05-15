@@ -1,0 +1,7 @@
+PKG result
+PKG mparser
+PKG astring
+PKG alcotest
+
+S lib
+B _build/**

@@ -1,0 +1,31 @@
+OASISFormat: 0.4
+Name:        changes
+Version:     0.1.0
+Authors:     David Sheets
+Maintainers: David Sheets <sheets@alum.mit.edu>
+License:     ISC
+Synopsis:    Changelog parser
+Description: Provides a changelog data type, parser, linter, and printer
+Homepage:    https://github.com/dsheets/ocaml-changes
+Plugins:     META (0.4)
+BuildTools:  ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Library changes
+  Path: lib
+  Findlibname: changes
+  Modules: Changes
+  BuildDepends: result, mparser, astring
+
+Executable "test"
+  Path: lib_test
+  MainIs: test.ml
+  Build$: flag(tests)
+  Install: false
+  BuildDepends: changes, alcotest
+
+Test "test"
+  TestTools: test
+  Run$: flag(tests)
+  Command: $test
+  WorkingDirectory: lib_test

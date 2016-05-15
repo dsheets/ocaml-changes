@@ -1,0 +1,4 @@
+Error in line 1, column 7:
+0.1.0:
+      ^
+Expecting date or branch/release name (in parentheses) or space or tab

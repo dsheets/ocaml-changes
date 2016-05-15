@@ -1,0 +1,6 @@
+*~
+*.byte
+setup.data
+setup.log
+_build
+lib_test/_tests
